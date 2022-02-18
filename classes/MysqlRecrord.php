@@ -2,7 +2,20 @@
 
 namespace classes;
 
-class MysqlRecrord
-{
+use interfaces\IRecrord;
 
+class MysqlRecrord implements IRecrord
+{
+    public function useRecrord() : string
+    {
+        $create = "CREATE TABLE MyGuests (
+            id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+            firstname VARCHAR(30) NOT NULL,
+            lastname VARCHAR(30) NOT NULL,
+            email VARCHAR(50),
+            reg_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+            )";
+
+        return $create;
+    }
 }

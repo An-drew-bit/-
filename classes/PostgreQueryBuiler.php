@@ -4,10 +4,10 @@ namespace classes;
 
 use interfaces\IQueryBuiler;
 
-class MysqlQueryBuiler implements IQueryBuiler
+class PostgreQueryBuiler implements IQueryBuiler
 {
     public function useQueryBuiler() : string
     {
-        return "MysqlQueryBuilder";
+        return "PostgreQueryBuiler";
     }
 }

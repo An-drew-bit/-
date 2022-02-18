@@ -2,7 +2,7 @@
 
 namespace interfaces;
 
-class IMysql
+interface IConnection
 {
-
+    public function useConnection() : string;
 }

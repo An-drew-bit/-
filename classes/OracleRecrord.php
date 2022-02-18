@@ -4,10 +4,10 @@ namespace classes;
 
 use interfaces\IRecrord;
 
-class PostgreRecrord implements IRecrord
+class OracleRecrord implements IRecrord
 {
     public function useRecrord() : string
     {
-        return "PostgreSQLQueryBuilder";
+        return "OracleRecrord";
     }
 }

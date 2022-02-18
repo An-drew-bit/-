@@ -1,8 +1,10 @@
 <?php
 
+namespace classes;
+
 use interfaces\IConnection;
 
-class mysqlConnection implements IConnection
+class MysqlConnection implements IConnection
 {
     public function useConnection() : string
     {

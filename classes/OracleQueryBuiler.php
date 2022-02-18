@@ -2,7 +2,12 @@
 
 namespace classes;
 
-class OracleQueryBuiler
-{
+use interfaces\IQueryBuiler;
 
+class OracleQueryBuiler implements IQueryBuiler
+{
+    public function useQueryBuiler() : string
+    {
+        return "OracleQueryBuiler";
+    }
 }
